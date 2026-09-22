@@ -16,10 +16,8 @@ class Solution {
                 l++;
             }
 
-            if(r-l+1 == k){
-                if(sum/k >= threshold){
-                    cnt++;
-                }
+            if((r-l+1 == k) && (sum/k >= threshold)){
+                cnt++;    
             }
         }
         return cnt;
